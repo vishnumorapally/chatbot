@@ -139,7 +139,7 @@ body{
 
 .com span{
     position: absolute;
-    top: 16;
+    top: 18;
     right: 8;
     color: black;
     z-index: 1;
@@ -152,8 +152,8 @@ body{
 @media screen and (min-width:320px) {
     
     .chatbot{
-        width: 85vw;
-        top: 30;
+        width: 80vw;
+        top: 20;
         left: 25;
     }
     .msg-bot{
