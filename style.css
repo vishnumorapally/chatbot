@@ -50,7 +50,7 @@ body{
     position: absolute;
     top: 5%;
     left: 35%;
-    height: 90vh;
+    height: 87vh;
     width: 25vw;
     background-color: rgb(255, 255, 255);
     /* background-color: #17153B; */
@@ -58,7 +58,7 @@ body{
     padding: 20px;
     z-index: 1;
     transition: all 1s;
-    display: none;
+    /* display: none; */
 }
 
 .chatbot h3{
@@ -69,7 +69,7 @@ body{
 .all-messages{
     margin-top: 10px;
     overflow: auto;
-    height: 74vh;
+    height: 72vh;
 }
 .all-messages::-webkit-scrollbar{
     width: 2px;
@@ -158,6 +158,7 @@ body{
     
     .chatbot{
         width: 90vw;
+        /* height: 80vh; */
         top: 20;
         left: 20;
     }

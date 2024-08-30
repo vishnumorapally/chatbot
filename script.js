@@ -1,13 +1,13 @@
-const openbtn = document.querySelector("#start");
-const chatbot = document.getElementById("chatbot");
-const closebot = document.getElementById("close");
-openbtn.addEventListener("click",()=>{
-    chatbot.style.display = "block";
-})
-closebot.addEventListener("click",()=>{
-    chatbot.style.display = "none";
-    console.log("button clikced")
-})
+// const openbtn = document.querySelector("#start");
+// const chatbot = document.getElementById("chatbot");
+// const closebot = document.getElementById("close");
+// openbtn.addEventListener("click",()=>{
+//     chatbot.style.display = "block";
+// })
+// closebot.addEventListener("click",()=>{
+//     chatbot.style.display = "none";
+//     console.log("button clikced")
+// })
 
 console.log("linked")
 
@@ -72,6 +72,18 @@ const getrandomtime=()=>{
     return time
 }
 
+const getresponse=(message)=>{
+    let data = {
+        "name" : "vishnu",
+        "age" : "20",
+        "vishnu" : "Yes, ask me anything",
+        "python hello world code" : "print('hello world')",
+    }
+    if(!data[message]) return ("not found")
+    return (data[message])
+}
+
+
 
 const createusermessage = (message)=>{
 
@@ -98,7 +110,8 @@ const handlechat = ()=>{
     console.log(usermessage)
     createusermessage(usermessage)
     chatInput.value = ""
-    createbotmessage("server not reachable")
+    
+    createbotmessage(getresponse(usermessage))
     
     
 }
