@@ -1,13 +1,13 @@
-// const openbtn = document.querySelector("#start");
-// const chatbot = document.getElementById("chatbot");
-// const closebot = document.getElementById("close");
-// openbtn.addEventListener("click",()=>{
-//     chatbot.style.display = "block";
-// })
-// closebot.addEventListener("click",()=>{
-//     chatbot.style.display = "none";
-//     console.log("button clikced")
-// })
+const openbtn = document.querySelector("#start");
+const chatbot = document.getElementById("chatbot");
+const closebot = document.getElementById("close");
+openbtn.addEventListener("click",()=>{
+    chatbot.style.display = "block";
+})
+closebot.addEventListener("click",()=>{
+    chatbot.style.display = "none";
+    console.log("button clikced")
+})
 
 console.log("linked")
 
