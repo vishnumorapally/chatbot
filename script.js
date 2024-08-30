@@ -1,13 +1,13 @@
-// const openbtn = document.querySelector("#start");
-// const chatbot = document.getElementById("chatbot");
-// const closebot = document.getElementById("close");
-// openbtn.addEventListener("click",()=>{
-//     chatbot.style.display = "block";
-// })
-// closebot.addEventListener("click",()=>{
-//     chatbot.style.display = "none";
-//     console.log("button clikced")
-// })
+const openbtn = document.querySelector("#start");
+const chatbot = document.getElementById("chatbot");
+const closebot = document.getElementById("close");
+openbtn.addEventListener("click",()=>{
+    chatbot.style.display = "block";
+})
+closebot.addEventListener("click",()=>{
+    chatbot.style.display = "none";
+    console.log("button clikced")
+})
 
 console.log("linked")
 
@@ -72,15 +72,18 @@ const getrandomtime=()=>{
     return time
 }
 
-const getresponse=(message)=>{
+const getresponsepersonal=(message)=>{
     let data = {
         "name" : "vishnu",
         "age" : "20",
         "vishnu" : "Yes, ask me anything",
         "python hello world code" : "print('hello world')",
     }
-    if(!data[message]) return ("not found")
-    return (data[message])
+    let g=""
+    g = message
+    let msgg= g.toLowerCase()
+    if(!data[msgg]) return ("not found")
+    return (data[msgg])
 }
 
 
@@ -104,6 +107,7 @@ const createusermessage = (message)=>{
 
 
 
+
 const handlechat = ()=>{
     usermessage = chatInput.value.trim()
     if(!usermessage) return;
@@ -111,7 +115,7 @@ const handlechat = ()=>{
     createusermessage(usermessage)
     chatInput.value = ""
     
-    createbotmessage(getresponse(usermessage))
+    createbotmessage(getresponsepersonal(usermessage))
     
     
 }
